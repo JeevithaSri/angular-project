@@ -1,0 +1,23 @@
+<span class="spantag">Task</span>
+<div class="table">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="slno">
+      <th mat-header-cell *matHeaderCellDef style="padding-left: 10%;"> Sl No </th>
+      <td mat-cell *matCellDef="let element" style="padding-left: 10%;"> {{element.slno}} </td>
+    </ng-container>
+    <ng-container matColumnDef="task">
+      <th mat-header-cell *matHeaderCellDef style="padding-left: 20%;"> Task </th>
+      <td mat-cell *matCellDef="let element" style="padding-left: 20%;"> {{element.task}} </td>
+    </ng-container>
+    <ng-container matColumnDef="assigneddate">
+      <th mat-header-cell *matHeaderCellDef style="padding-left: 12%;">  Assigned Date</th>
+      <td mat-cell *matCellDef="let element" style="padding-left: 12%;"> {{element.assigneddate}} </td>
+    </ng-container>
+    <ng-container matColumnDef="deadline">
+      <th mat-header-cell *matHeaderCellDef style="padding-left: 10%;"> Deadline </th>
+      <td mat-cell *matCellDef="let element" style="padding-left: 10%;"> {{element.deadline}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  </div>

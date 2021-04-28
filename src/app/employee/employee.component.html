@@ -1,0 +1,32 @@
+<mat-toolbar class="toolbar-mode">
+    
+    <img style="width:250px" src="https://www.smartclaims.asia/assets/images/logo.png" alt="cybervault">
+    <span class="example-spacer"></span>
+    <div class="search-group">
+        <input type="text" class="search-input" placeholder="Search project · · ·">
+        <button class="search-btn">
+            <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <div class="make-button">
+    <button mat-icon-button style="background-color:rgb(10,10,107)" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon style="color:rgb(231,157,15)">person</mat-icon>
+    </button>
+    </div>
+    
+  </mat-toolbar>
+  <mat-sidenav-container>
+      <mat-sidenav  style="width:280px;background-color: rgb(7, 7, 61);" mode="side" opened>
+          <mat-nav-list style="padding-left: 1.5cm;">
+              <a mat-list-item  routerLink='employeedashboard' style="color:rgb(231, 157, 15)">Dashboard</a>
+              <a mat-list-item  routerLink='profile' style="color:rgb(231, 157, 15)">Profile</a>
+              <a mat-list-item  routerLink='task' style="color:rgb(231, 157, 15)">Task</a>
+              <a mat-list-item  routerLink='report' style="color:rgb(231, 157, 15)">Report</a>
+          </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+          <p style="height:557px">
+            <router-outlet></router-outlet>
+        </p>
+      </mat-sidenav-content>
+  </mat-sidenav-container>

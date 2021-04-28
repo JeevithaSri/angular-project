@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "id": "10",
+      "username": "abc",
+      "role": "Admin",
+      "contactpreference": "phone",
+      "email": "aramya0209@gmail.com",
+      "password": "12345"
+    },
+    {
+      "title": "",
+      "startdate": "",
+      "enddate": "",
+      "description": "",
+      "id": "hQiWDeM"
+    },
+    {
+      "title": "",
+      "startdate": "",
+      "enddate": "",
+      "description": "",
+      "id": "tNf68_u"
+    }
+  ],
+  "project": [
+    {}
+  ],
+
+  "task": [{
+
+  }],
+
+  "empreport": [{
+    
+  }]
+}

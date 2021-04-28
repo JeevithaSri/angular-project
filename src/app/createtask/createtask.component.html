@@ -1,0 +1,33 @@
+<div class="card1">
+    <mat-card class="cardT">
+        <mat-card-header class="head" fxLayout
+        fxLayoutAlign="center" ><b><u>New Task</u></b></mat-card-header><br>
+        <form class="form-group" (ngSubmit)='onSubmit()'>
+            <mat-form-field class="example-full-width">
+                <mat-label>Project name</mat-label>
+                <input matInput [(ngModel)]="task.projectname" #projectname="ngModel" name="projectname">
+              </mat-form-field><br><br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Task name</mat-label>
+                <input matInput [(ngModel)]="task.taskname" #taskname="ngModel" name="taskname">
+              </mat-form-field><br><br>
+              <mat-form-field appearance="fill" class="date">
+                <mat-label>Enter a Task date range</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                  <input matStartDate placeholder="Start date" [(ngModel)]="task.startdate" #startdate="ngModel" name="startdate">
+                  <input matEndDate placeholder="End date" [(ngModel)]="task.enddate" #enddate="ngModel" name="enddate">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field><br><br>
+              <mat-form-field class="example-full-width">
+                <mat-label>Assigned To</mat-label>
+                <input matInput [(ngModel)]="task.assignedto" #assignedto="ngModel" name="assignedto"> 
+              </mat-form-field><br> 
+    </form>
+        <div class="example-button-row" style="float: right;">
+            <button mat-button type="submit">Create Task</button>
+            </div>
+    </mat-card>    
+    </div>
+    

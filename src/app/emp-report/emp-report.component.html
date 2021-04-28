@@ -1,0 +1,16 @@
+<span class="spantag">Report</span>
+<mat-card>
+<div>
+    
+    <div class="form-group"  (onSubmit)='onSubmit()' >
+      <label class="control-label">Project Name</label>
+      <input type="text" [(ngModel)]="empreport.projectname" #projectname="ngModel" name="projetname" class="form-control" placeholder="Text Input" placeholder="Project Name"><br>
+        <label class="control-label" id="task">Task Name</label>
+        <input type="text" [(ngModel)]="empreport.taskname" #taskname="ngModel" name="taskname" class="form-control" placeholder="Text Input" placeholder="Task Name"><br>
+        <label class="control-label">Progress</label>
+        <input type="text" [(ngModel)]="empreport.progress" #progress="ngModel" name="progress" class="form-control" placeholder="Text Input" placeholder="Completion Status"><br>
+        </div>
+      <button class="btn btn-primary" style="float: right;" type="submit">Submit</button>
+  </div>
+
+</mat-card>

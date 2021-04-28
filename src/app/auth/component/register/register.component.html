@@ -1,0 +1,60 @@
+<div id="login" class="login-form-container">
+	<header><p><b>Register Here !!!</b></p></header>
+	
+   <form (ngSubmit)='onSubmit()'>
+	<div class="input-wrapper">
+		
+     <input type="text" name='id' [(ngModel)]="employee.id" #id="ngModel" placeholder="User-ID" aria-label="UserId" aria-describedby="basic-addon1"><br>
+ </div>
+ <div class="input-wrapper">
+		
+  <input type="text" name='username' [(ngModel)]="employee.username" #username="ngModel" placeholder="User-name" aria-label="Username" aria-describedby="basic-addon1"><br>
+</div>
+<div class="input-wrapper">
+<div id="custom-select" >
+  <select name="role" [(ngModel)]="employee.role" #role="ngModel">
+    <option value="" disabled selected hidden>Role</option>
+    <option>Admin</option>
+    <option>Manager</option>
+    <option>Employee</option>
+   
+  </select>
+  </div>
+  </div>
+ <div class="input-wrapper">
+		
+  <input type="email" name='email' [(ngModel)]="employee.email" #email="ngModel"  placeholder="Mail-ID" aria-label="mailId" aria-describedby="basic-addon1"><br>
+</div>
+<div class="input-wrapper">
+  
+  <input type="text" name='contact' [(ngModel)]="employee.contactpreference" #contact="ngModel"  placeholder="Contact-Preferences" aria-label="contact" aria-describedby="basic-addon1"><br>
+</div><div class="input-wrapper">
+   <input type="password" name='password' [(ngModel)]="employee.password" #password="ngModel"  placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+   
+  </div>
+  <div class="input-wrapper">
+    <input type="password" name='cpassword'  placeholder="Confirm Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    
+   </div>
+ 
+ 
+
+<button >Register</button>
+<button>Login</button>
+</form>
+ </div>
+<!-- <div id="login" class="login-form-container">
+	<form #f='ngForm' (ngSubmit)='onSubmit()'>
+
+	<header>LOGIN - SIGN UP</header>
+	<fieldset>
+	  <div class="input-wrapper">
+		<input type="text" name='name'  [(ngModel)]="employee.username" #name="ngModel" class="form-control" placeholder="Userid" aria-label="UserId" aria-describedby="basic-addon1"><br>
+	</div>
+	  <div class="input-wrapper">
+		<input type="password" name='password'  [(ngModel)]="employee.password" #password="ngModel" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	</div>
+	  <button type="submit" type="button">CONTINUE</button>
+	</fieldset>
+	</form>
+  </div> -->

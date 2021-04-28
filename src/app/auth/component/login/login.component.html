@@ -1,0 +1,35 @@
+<div id="login" class="login-form-container">
+	<header><p><b>LOGIN To Continue ..</b> </p></header>
+	
+   <form #f='ngForm' (ngSubmit)='onSubmit()'>
+	<div class="input-wrapper">
+		
+     <input type="text" name='name'  [(ngModel)]="employee.username" #name="ngModel"  placeholder="User-Name" aria-label="UserId" aria-describedby="basic-addon1"><br>
+ </div><div class="input-wrapper">
+   <input type="password" name='password'  [(ngModel)]="employee.password" #password="ngModel"  placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+   
+  </div>
+
+ <div class="forgot">
+  <a routerLink='/resetpassword' routerLinkActive='Active'>Forgot password ?</a>
+  </div>
+<button type="submit"  >Login</button>
+<span class="orPart">-----------------or-----------------</span>
+</form>
+<button routerLink="/register" >Register</button>
+ </div>
+<!-- <div id="login" class="login-form-container">
+	<form #f='ngForm' (ngSubmit)='onSubmit()'>
+
+	<header>LOGIN - SIGN UP</header>
+	<fieldset>
+	  <div class="input-wrapper">
+		<input type="text" name='name'  [(ngModel)]="employee.username" #name="ngModel" class="form-control" placeholder="Userid" aria-label="UserId" aria-describedby="basic-addon1"><br>
+	</div>
+	  <div class="input-wrapper">
+		<input type="password" name='password'  [(ngModel)]="employee.password" #password="ngModel" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	</div>
+	  <button type="submit" type="button">CONTINUE</button>
+	</fieldset>
+	</form>
+  </div> -->

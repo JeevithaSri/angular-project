@@ -1,0 +1,32 @@
+<div class="c1">
+    <div class="card1">
+        <mat-card class="cardT">
+            <mat-card-header class="head" fxLayout
+            fxLayoutAlign="center" ><b><u>Report</u></b></mat-card-header><br>
+            <form class="form-group">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Project name</mat-label>
+                    <input matInput>
+                  </mat-form-field><br><br>
+                
+                  <mat-form-field appearance="fill" class="date">
+                    <mat-label>Enter a Task date range</mat-label>
+                    <mat-date-range-input [rangePicker]="picker">
+                      <input matStartDate placeholder="Start date">
+                      <input matEndDate placeholder="End date">
+                    </mat-date-range-input>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                  </mat-form-field><br><br>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Progress</mat-label>
+                    <input matInput>
+                  </mat-form-field><br> 
+        </form>
+            <div class="example-button-row" style="float: right;">
+                <button mat-button >Submit</button>
+                </div>
+        </mat-card>    
+        </div>
+    </div>
+    
