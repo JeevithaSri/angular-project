@@ -19,7 +19,7 @@ import { AdminComponent } from './admin/admin.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
-import { CreateprojectComponent } from './createproject/createproject.component';
+
 import { CreatetaskComponent } from './createtask/createtask.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -40,6 +40,9 @@ import { LoginService } from './auth/component/login/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EmpProjectComponent } from './emp-project/emp-project.component';
 import { EmpReportComponent } from './emp-report/emp-report.component';
+
+import { CreateAdminProjectComponent } from './create-admin-project/create-admin-project.component';
+import { ListAdminProjectComponent } from './list-admin-project/list-admin-project.component';
 // import { EmpProjectComponent } from './emp-project/emp-project.component';
 // import { EmpReportComponent } from  './emp-report/emp-report.component';
 
@@ -55,7 +58,7 @@ import { EmpReportComponent } from './emp-report/emp-report.component';
     EmployeeComponent,
     AdminDashboardComponent,
     EmployeeDashboardComponent,
-    CreateprojectComponent,
+  
     CreatetaskComponent,
     ViewprojectComponent,
     AssignprojectComponent,
@@ -64,15 +67,19 @@ import { EmpReportComponent } from './emp-report/emp-report.component';
     ManagerreportComponent,
     EmpProjectComponent,
     EmpReportComponent,
+    
+    
+    CreateAdminProjectComponent,
+    ListAdminProjectComponent,
     // EmpProjectComponent,
     // EmpReportComponent
     
   ],
   imports: [
     BrowserModule,AuthModule,SharedModule,MatSelectModule,
-    AppRoutingModule,FlexLayoutModule,MatGridListModule,
+    AppRoutingModule,FlexLayoutModule,MatGridListModule,MatIconModule,
     FormsModule,MatCardModule,MatInputModule,MatFormFieldModule,MatTableModule ,MatRadioModule,MatDatepickerModule,MatNativeDateModule,MatCheckboxModule,
-    MatButtonModule,MatToolbarModule,MatIconModule,MatSidenavModule,MatListModule,BrowserAnimationsModule,HttpClientModule
+    MatButtonModule,MatToolbarModule,MatSidenavModule,MatListModule,BrowserAnimationsModule,HttpClientModule
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]

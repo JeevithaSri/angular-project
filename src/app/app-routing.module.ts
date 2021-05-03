@@ -7,7 +7,7 @@ import { ManagerComponent } from './manager/manager.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component'
 import { EmployeeDashboardComponent} from './employee-dashboard/employee-dashboard.component'
-import { CreateprojectComponent } from './createproject/createproject.component';
+
 import { CreatetaskComponent } from './createtask/createtask.component';
 import { ViewprojectComponent } from './viewproject/viewproject.component';
 import { AssignprojectComponent } from './assignproject/assignproject.component';
@@ -18,6 +18,8 @@ import {ManagerreportComponent} from './managerreport/managerreport.component'
 import {LoginComponent} from './auth/component/login/login.component';
 import {EmpReportComponent} from  './emp-report/emp-report.component';
 import {EmpProjectComponent} from './emp-project/emp-project.component';
+import { CreateAdminProjectComponent } from './create-admin-project/create-admin-project.component';
+import { ListAdminProjectComponent } from './list-admin-project/list-admin-project.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,9 @@ const routes: Routes = [
       { path:'',component:AdminDashboardComponent},
       {path: 'admindashboard', component:AdminDashboardComponent },
       {path: 'profile', component:ProfileComponent },
+      {path: 'create', component:CreateAdminProjectComponent },
       {path: 'assignproject', component:AssignprojectComponent },
+      {path: 'list', component:ListAdminProjectComponent },
       {path: 'adminreport', component:AdminreportComponent },
       {path: 'completion', component:CompletionComponent },  
     ]
@@ -37,7 +41,7 @@ const routes: Routes = [
     
     {path: 'managerdashboard', component:ManagerDashboardComponent },
     {path:'profile',component:ProfileComponent},
-    {path:'newproject',component:CreateprojectComponent},
+    
     {path:'newtask',component:CreatetaskComponent },
     {path:'viewproject',component:ViewprojectComponent},
     {path:'managerreport',component:ManagerreportComponent},
